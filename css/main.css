@@ -1,0 +1,269 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  color: #384047;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+form {
+  max-width: 1000px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 8px;
+}
+header {
+  background-color: rgb(24, 41, 97);
+  color: white;
+  align-items: center;
+  padding: 20px;
+  margin: 0;
+  justify-content: center;
+}
+header h1 {
+  align-items: center;
+  padding: 10px;
+  margin: 0;
+  justify-content: center;
+}
+legend {
+  font-weight: bolder;
+}
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+h2{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+}
+h3 {
+  color: grey;
+  text-align: center;
+  font-size: 1.3em;
+  margin:20px;
+  
+}
+hr.s7 {
+  height:6px;
+  border-top:8px solid black;
+  border-bottom:4px solid black;
+  border-left: 0;
+  border-right: 0;
+}
+hr.s6 {
+  height:2px;
+  border-top:2px solid black;
+  
+}
+.topbanner {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+label {
+  margin-bottom: 0;
+}
+footer {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: .7em;
+  font-weight: lighter;
+  font-style: italic; 
+  color: rgb(177, 177, 177);
+  padding-top: 10px;
+  padding-bottom: 150px;
+}
+input { 
+  
+  text-align: right;
+  transition-duration: .5s;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #383838;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 10px;
+  text-align: left;
+  justify-content: left;
+  transition-duration: .2s;
+}
+input:focus {
+  background-color: honeydew;
+}
+textarea:focus {
+  background-color: honeydew;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+input#zipcode {
+  width: 40%;
+  text-align: left;
+  justify-content: left;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #4bbac9;
+  font-size: 22px;
+  font-weight: bolder;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #4bbac9;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+  transition-duration: 1s;
+}
+
+button:hover {
+  background: green;
+}
+button:active {
+  background: yellowgreen;
+}
+
+fieldset {
+  margin-bottom: 0;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+label {
+ display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+.number {
+  background-color: #5fcf80;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+}
+::placeholder {
+  color: rgb(167, 167, 167);
+  font-style: italic;
+  font-size: .8em;
+  text-align: right;
+}
+.topbanner,
+.contactinfo
+ {
+  display: flex;
+  flex-direction: column;
+  background-color: yellow;
+  width: 100%;
+  border-radius: 10px;
+}
+.signup,
+.signupinfo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  background-color: yellow;
+  flex-direction: row;
+  border-radius: 10px;
+  margin: auto;
+}
+
+#fieldset1 {
+  
+  background-color: yellow; 
+  border-color: yellow;
+  
+  margin-right: auto;
+  width:100%;
+ 
+}
+
+@media screen and (min-width: 768px) {
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+}
+
+div.form-group label {
+  width: 200px;
+}
+fieldset label .zipcode1 {
+  width: 143px;
+}
+.zipcode {
+  display: flex;
+  flex-direction: row;
+}
+.topbanner {
+  width:700px;
+}
+.zipcode1 {
+  width: 153px;
+}
+
+h3 {
+  
+  margin-bottom: 50px;
+}
+
+}
